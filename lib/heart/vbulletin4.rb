@@ -1,4 +1,4 @@
-module Fetch
+module Heart
   module Vbulletin4
     def fetch_vbulletin4BlogsNew
       self.vbulletin4BlogsNew = Heart::Metric.find_by_sql("SELECT count(*) as the_count FROM blog WHERE dateline BETWEEN UNIX_TIMESTAMP('#{fulldate} 00:00:00') AND UNIX_TIMESTAMP('#{fulldate} 23:59:59')").first.the_count

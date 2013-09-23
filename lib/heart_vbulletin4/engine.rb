@@ -2,7 +2,7 @@ module HeartVbulletin4
   class Engine < ::Rails::Engine
     isolate_namespace HeartVbulletin4
     
-    config.autoload_paths << File.expand_path("../lib/fetch/vbulletin4", __FILE__)
+    config.autoload_paths << File.expand_path("../lib/heart/vbulletin4", __FILE__)
     
     # Run migrations from inside the rails engine
     # instead of copying to app with heart:install:migrations
@@ -21,7 +21,7 @@ module HeartVbulletin4
     # Need to add the fetch methods for vbulletin4 metrics
     initializer :extend_heart_metrics_for_heart_vbulletin4 do |app|
       Heart::Metric.class_eval do
-        include Fetch::Vbulletin4
+        include Heart::Vbulletin4
       end
     end
   end
