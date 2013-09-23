@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.email       = ["cwabbott@gmail.com"]
   s.homepage    = "https://github.com/cwabbott/heart_vbulletin4"
   s.summary     = "HeartVbulletin4 plugs metrics into HEART for your vBulletin (version 4) forum."
-  s.description = "HeartVbulletin4 plugs metrics into HEART for your vBulletin (version 4) forum."
+  s.description = "HeartVbulletin4 plugs metrics into HEART (https://github.com/cwabbott/heart) for your vBulletin (version 4) forum."
 
   s.files = Dir["{config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
